@@ -1,0 +1,26 @@
+
+<div class="card-columns m-3 mt-5">
+  
+    <!-- Local musics -->
+    {% for music in site.music %}
+  
+      {%- assign music_type  = "local" -%}
+      {%- assign music_id    = music.name | slugify -%}
+      {%- assign music_img   = music.image -%}
+      {%- assign music_name  = music.name -%}
+      {%- assign music_desc  = music.description -%}
+      {%- assign music_tools = music.tools -%}
+  
+      {%- if music.external_url -%}
+        {%- assign music_url = music.external_url -%}
+        {%- assign external    = true -%}
+      {%- else -%}
+        {%- assign music_url = music.url | relative_url -%}
+        {%- assign external    = false -%}
+      {%- endif -%}
+  
+      {% include music/music-card.html %}
+  
+    {% endfor %}
+  
+  </div>
