@@ -7,13 +7,14 @@ weight: 1
 
 # **About Me**
 
-Hello! My name is Daniel Flores García, and I'm a senior at Amherst College.
+Hi! My name is Daniel Flores García. I was born and raised in Tegucigalpa, Honduras; currently, I'm a senior at Amherst College.
 
-I am a computer scientist and a musician. I value creativity, curiosity, excellence and collaboration. In all of my work, I strive to create impactful, innovative, yet beautiful things, which could mean anything from a functional and elegant piece of code to an emotional and expressive piece of music.
+I am both a computer scientist and a musician. In my work, I aim to create beautiful and impactful things, which can range from crafting functional and elegant code to producing groovy and expressive music.
 
-When I'm not diving deep into a project or paper, or discussing the applications and implications of a theoretical result with my professors and peers, you can find me performing as a guitarist, percussionist, or vocalist.
+Through school, I've found that I really like brainstorming and developing generative models for muscking, diving into papers about information theory and adversarial methods, writing buffer overflow exploits for educational purposes, and coding a simple, simulated OS kernel. Outside of school, I enjoy writing, performing, and recording my own music. I've also been fortunate enough to enhance my software engineering skills through summer internships.
 
-If you want to get in touch, feel free to reach me via email!
+Feel free to reach me via the links at the bottom of this page!
+
 
 <div class="row">
 {% include about/timeline.html %}
