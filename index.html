@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>daniel flores garcía</title>
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; max-width: 720px; }
+  .tile { position: relative; display: block; aspect-ratio: 1; }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tile span {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    padding: 8px; text-align: center; color: #fff; text-decoration: underline;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .tile:hover span { background: rgba(0, 0, 0, 0.6); }
+</style>
 </head>
 <body>
 
@@ -15,25 +26,22 @@ this site is currently a work in progress, so stay tuned!
 in the mean time, here's some of my music:
 </p>
 
-<ul>
-  <li>
-    <a href="https://distrokid.com/hyperfollow/danielfloresgarcia/larala?ref=release"><img src="images/larala.jpg" alt="Larala" width="150"></a><br>
-    <a href="https://distrokid.com/hyperfollow/danielfloresgarcia/larala?ref=release">Larala</a>
-  </li>
-  <li>
-    <a href="https://distrokid.com/hyperfollow/danielfloresgarcia/maana-de-sosiego?ref=release"><img src="images/manana-de-sosiego.jpg" alt="Mañana de Sosiego" width="150"></a><br>
-    <a href="https://distrokid.com/hyperfollow/danielfloresgarcia/maana-de-sosiego?ref=release">Mañana de Sosiego</a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/danielflores_ga/bien-loco"><img src="images/bien-loco.jpg" alt="Bien Loco" width="150"></a><br>
-    <a href="https://soundcloud.com/danielflores_ga/bien-loco">Bien Loco</a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/danielflores_ga/rescue-hachede"><img src="images/rescue-hachede.jpg" alt="Rescue Hachede" width="150"></a><br>
-    <a href="https://soundcloud.com/danielflores_ga/rescue-hachede">Rescue Hachede</a>
-  </li>
-  <li>...</li>
-</ul>
+<div class="grid">
+  <a class="tile" href="https://distrokid.com/hyperfollow/danielfloresgarcia/larala?ref=release">
+    <img src="images/larala.jpg" alt=""><span>Larala</span>
+  </a>
+  <a class="tile" href="https://distrokid.com/hyperfollow/danielfloresgarcia/maana-de-sosiego?ref=release">
+    <img src="images/manana-de-sosiego.jpg" alt=""><span>Mañana de Sosiego</span>
+  </a>
+  <a class="tile" href="https://soundcloud.com/danielflores_ga/bien-loco">
+    <img src="images/bien-loco.jpg" alt=""><span>Bien Loco</span>
+  </a>
+  <a class="tile" href="https://soundcloud.com/danielflores_ga/rescue-hachede">
+    <img src="images/rescue-hachede.jpg" alt=""><span>Rescue Hachede</span>
+  </a>
+</div>
+
+<p>...</p>
 
 <p>
 <a href="https://github.com/dafg05">github</a> ·
