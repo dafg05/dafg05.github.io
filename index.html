@@ -39,9 +39,15 @@ in the mean time, here's some of my music:
 
 <p>
 <a href="https://github.com/dafg05">github</a> ·
-<a href="mailto:danialefloresg@gmail.com">email</a> ·
+<a href="#" id="email">email</a> ·
 <a href="https://www.instagram.com/daniel_floresga/">instagram</a>
 </p>
+
+<script>
+  // build the mailto at runtime so the address isn't in the page source as plain text
+  var u = ["danialefloresg", "gmail.com"];
+  document.getElementById("email").href = "mailto:" + u.join("@");
+</script>
 
 </body>
 </html>
